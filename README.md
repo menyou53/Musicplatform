@@ -12,6 +12,7 @@ Login
 
 FirebaseUser user = auth.getCurrentUser();
 取得登入中的user.
+
 if (user != null) {
     emailstr = user.getEmail().toString();
     estr = emailstr.replaceAll("\\.", "_");
@@ -19,6 +20,7 @@ if (user != null) {
     globalVariable.Estr = estr;
 }
 如果正在登入中,將email存到GlobalVariable.
+
 if (user != null) {
     Intent intent = new Intent();
     intent.setClass(Login.this, Welcome.class);
