@@ -198,7 +198,7 @@ private void mixaudio(){
 }
 設定點擊混音圖片事件,點擊後彈出選擇第一首音樂的視窗,選擇後彈出選擇第二首音樂的視窗,選完後建立mix的執行緒執行mixaudio(),利用ffmpeg command執行混音
 ,結束後執行recList(),更新listview音樂列表,檢查資料夾內的mp3檔案新增到listview,完成後關閉執行緒.
-
+ 
 
 imgImportVideo.setOnClickListener(new View.OnClickListener() {
         @Override
