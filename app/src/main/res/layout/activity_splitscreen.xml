@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Choose split style" />
+
+    <ImageView
+        android:id="@+id/splitview1"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_2_1"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+        android:id="@+id/splitview2"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_3_1"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <ImageView
+        android:id="@+id/splitview4"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_4_1"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="519dp" />
+
+
+</LinearLayout>

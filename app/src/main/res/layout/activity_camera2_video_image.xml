@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textureView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/videoOnlineImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:rotation="90"
+        android:src="@mipmap/btn_video_online"
+        tools:ignore="RtlCompat" />
+
+
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:visibility="invisible"
+        android:textColor="#ff0000"
+        android:textSize="25dp"
+        android:rotation="90"
+        android:layout_marginRight="50dp"
+        android:layout_alignBottom="@+id/videoOnlineImageButton"
+        android:layout_alignRight="@+id/videoOnlineImageButton" />
+
+    <ImageView
+        android:id="@+id/btn_musicvplay"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="70dp"
+        android:rotation="90"
+        android:layout_alignTop="@+id/videoOnlineImageButton"
+        android:src="@drawable/ic_musicalnote" />
+
+    <TextView
+        android:id="@+id/vplayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_musicvplay"
+        android:layout_alignRight="@+id/btn_musicvplay"
+        android:text=""
+        android:rotation="90"
+
+    android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "634290414161",
+    "firebase_url": "https://music-platform-18908.firebaseio.com",
+    "project_id": "music-platform-18908",
+    "storage_bucket": "music-platform-18908.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634290414161:android:58d935871ac557df",
+        "android_client_info": {
+          "package_name": "com.example.youmen.musicplatform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634290414161-3riuqr1ia5inpu1dbc3t7v2606asjd8c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.youmen.musicplatform",
+            "certificate_hash": "86fca4867b1c462f5a9b91f8ac3f7d7591576f7f"
+          }
+        },
+        {
+          "client_id": "634290414161-eo7qjdgoqqrvi6kvv7vj99abgrnnfoes.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQmzt1LmL6iZM1xLoqsHzukO_oMnnGwiU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634290414161-eo7qjdgoqqrvi6kvv7vj99abgrnnfoes.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

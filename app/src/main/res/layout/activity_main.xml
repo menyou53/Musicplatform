@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.youmen.musicplatform.MainActivity">
+
+    <TextView
+        android:id="@+id/txtRec"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="點選錄音檔即可撥放"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgImport"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRec"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec"
+        android:src="@drawable/ic_import"/>
+    <ImageView
+        android:id="@+id/imgImportVideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgImport"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/imgImport"
+        app:layout_constraintLeft_toRightOf="@+id/imgImport"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec"
+        android:src="@drawable/ic_importvideo"  />
+
+    <ImageView
+        android:id="@+id/imgStop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgImport"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/imgImportVideo"
+        app:layout_constraintLeft_toRightOf="@+id/imgImportVideo"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/imgEnd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgImport"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/imgStop"
+        app:layout_constraintLeft_toRightOf="@+id/imgStop"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ToggleButton
+        android:id="@+id/record2"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgImport"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/imgStop"
+        android:button="@drawable/check"
+        android:textOff="rec"
+        android:textOn="stop"
+        app:layout_constraintLeft_toRightOf="@+id/imgEnd"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec" />
+
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgEnd"
+        android:layout_marginTop="60dp"
+        android:text="音樂清單："
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgImportVideo" />
+
+    <ImageView
+        android:id="@+id/img_mix"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_mix"
+        app:layout_constraintBottom_toBottomOf="@+id/record2"
+        app:layout_constraintEnd_toEndOf="@+id/txtList"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/record2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRec" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/txtList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record2">
+
+        <EditText
+            android:id="@+id/bpm"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="bpm:30~300"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/delay"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="幾秒後開始"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/img_metronome"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_metronome" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtList">
+
+        <ListView
+            android:id="@+id/lstRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtList"
+            app:layout_constraintTop_toBottomOf="@+id/txtList">
+
+
+        </ListView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

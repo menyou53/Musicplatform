@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/videotool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/btn_right"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/darker_gray"
+
+                    android:src="@drawable/ic_right" />
+
+                <ImageView
+                    android:id="@+id/btn_chooseVideo"
+                    android:layout_width="60dp"
+
+                    android:background="@android:color/darker_gray"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_videofolder" />
+
+                <ImageView
+                    android:id="@+id/btn_cut"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/ic_cut" />
+
+                <ImageView
+                    android:id="@+id/btn_mux"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/ic_mux" />
+
+                <ImageView
+                    android:id="@+id/btn_split"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/ic_splt" />
+
+                <ImageView
+                    android:id="@+id/btn_recordVideo"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+
+                    android:background="@android:color/darker_gray"
+                    android:src="@drawable/ic_video" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_left"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+
+                android:background="@android:color/darker_gray"
+                android:src="@drawable/ic_left" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
